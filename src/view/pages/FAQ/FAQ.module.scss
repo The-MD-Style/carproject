@@ -1,0 +1,25 @@
+.faq {
+  background-color: white;
+
+  .question {
+    padding-bottom: 100px;
+    display: flex;
+    gap: 26px;
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+
+      gap: 10px;
+    }
+    margin-bottom: 10px;
+  }
+
+  .contactWrapper {
+    width: 710px;
+  }
+}

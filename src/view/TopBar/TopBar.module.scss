@@ -1,0 +1,60 @@
+@use 'src/styles/colors.module.scss' as *;
+.container {
+  background: map-get($colors, darkGrey);
+  position: relative;
+
+  .info {
+    margin: 0 auto;
+    max-width: 1180px;
+    display: flex;
+    padding: 16px 77px 14px 0;
+    width: 75%;
+    flex-flow: wrap;
+    gap: 12px 40px;
+
+    .item {
+      fill: map-get($colors, white);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 400;
+      font-family: 'Roboto', sans-serif;
+      line-height: 17px;
+      font-size: 16px;
+      color: map-get($colors, grey);
+
+      span {
+        color: map-get($colors, white);
+      }
+    }
+  }
+
+  .button {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: map-get($colors, yellow);
+    width: 205px;
+    max-width: 225px;
+    height: 50px;
+    -webkit-clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    transition: 0.4s;
+
+    &:hover {
+      width: 225px;
+    }
+
+    .paragraph {
+      color: map-get($colors, black);
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+    }
+  }
+}

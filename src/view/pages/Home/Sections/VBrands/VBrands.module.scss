@@ -1,0 +1,27 @@
+.autoSection {
+  padding-top: 60px;
+  min-height: 353px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .content {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3px 3px;
+  }
+  .button {
+    margin-top: 40px;
+    background: none;
+    border: 1px solid black;
+    color: black;
+    font-size: 16px;
+    padding: 17px 34px;
+    font-weight: 500;
+    border-radius: 0;
+  }
+}

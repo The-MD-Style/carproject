@@ -1,5 +1,7 @@
 .container {
-    margin: 0 auto;
-    padding: 0 15px;
-    max-width: 1140px;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

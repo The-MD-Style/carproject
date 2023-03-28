@@ -1,0 +1,26 @@
+import { IFirstCardData } from 'models/card.model';
+
+export const fillFirstCardData: IFirstCardData[] = [
+  { description: 'FREE Loaner Cars' },
+  { description: 'FREE Shuttle Service' },
+  { description: 'General Auto Repair & Maintenance' },
+  { description: 'Transmission Repair & Replacement' },
+  { description: 'Fuel System Repair' },
+  { description: 'Exhaust System Repair' },
+  { description: 'Engine Cooling System Maintenance' },
+  { description: 'Electrical Diagnostics' },
+  { description: 'Starting and Charging Repair' },
+  { description: 'Wheel Alignment' },
+  { description: 'Computer Diagnostic Testing' },
+  { description: 'Manufacturer Recommended Service' },
+  { description: 'Brake Repair and Replacement' },
+  { description: 'Air Conditioning A/C Repair' },
+  { description: 'Tire Repair and Replacement' },
+  { description: 'Vehicle Preventative Maintenance' },
+  { description: 'State Emissions Inspection' },
+  { description: 'Emission Repair Facility' },
+  { description: 'Oil Change' },
+  { description: 'Brake Job / Brake Service' },
+  { description: 'Engine Cooling System Flush & Repair' },
+  { description: 'Steering and Suspension Work' },
+];

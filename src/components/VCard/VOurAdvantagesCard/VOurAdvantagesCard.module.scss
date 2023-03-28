@@ -1,0 +1,59 @@
+@use 'src/styles/colors.module.scss' as *;
+.container {
+  background: map-get($colors, darkGrey);
+  height: 450px;
+  display: flex;
+  align-items: center;
+
+  .wrapper {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    width: 1140px;
+    gap: 56px;
+  }
+  .item {
+    display: flex;
+    .icon {
+      fill: map-get($colors, orange);
+      margin-right: 30px;
+    }
+
+    .block {
+      width: 382px;
+      font-size: 16px;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+
+      .name {
+        font-size: 22px;
+        line-height: 1.2;
+        color: #ffffff;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        padding: 0 0 14px 0;
+        margin: 0;
+      }
+
+      .description {
+        font-size: 16px;
+        line-height: 25px;
+        color: #d4d4d4;
+      }
+    }
+  }
+  .text {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    font-size: 180px;
+    z-index: 1;
+    color: #ffffff;
+    opacity: 0.02;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    white-space: nowrap;
+    text-align: center;
+  }
+}

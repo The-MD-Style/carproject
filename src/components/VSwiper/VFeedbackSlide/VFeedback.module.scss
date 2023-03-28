@@ -1,0 +1,51 @@
+.slide {
+  width: 100%;
+  min-height: 486px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+
+  .img {
+    height: 250px;
+    width: 178px;
+    position: relative;
+
+    .photo {
+      border-radius: 50%;
+      background-color: #000;
+    }
+
+    .bottomDots {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: orange;
+      font-weight: 700;
+      fill:#5e5e5e;
+    }
+  }
+
+  .text {
+    margin-top: 26px;
+    width: 760px;
+    text-align: center;
+    min-height: auto;
+    font-size: 20px;
+    line-height: 28px;
+    color: #3a3a3a;
+    margin-bottom: 13px;
+  }
+
+  .name {
+    position: relative;
+    left: -11px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #ffc513;
+  }
+}

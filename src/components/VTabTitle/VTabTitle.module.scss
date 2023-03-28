@@ -1,0 +1,28 @@
+@use 'src/styles/colors.module.scss' as *;.activeTab {
+  fill: map-get($colors, orange);
+  border-bottom: 2px solid orange !important;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 245px;
+  height: 144px;
+  border-bottom: 2px solid transparent;
+
+  .text {
+    color:map-get($colors, black);
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 8px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+  &:hover {
+    fill: map-get($colors, orange);
+    cursor: pointer;
+    border-bottom: 2px solid orange;
+  }
+}

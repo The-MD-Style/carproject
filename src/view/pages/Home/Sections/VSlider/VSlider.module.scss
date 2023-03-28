@@ -1,0 +1,24 @@
+.slider {
+  height: 639px;
+  width: 100%;
+
+  :global(.swiper-button-prev) {
+    left: 40px;
+  }
+  :global(.swiper-button-next) {
+    right: 40px;
+  }
+
+  :global(.swiper-button-next),
+  :global(.swiper-button-prev) {
+    position: absolute;
+    color: white;
+    &::after {
+      font-size: 23px;
+      font-weight: 1000;
+    }
+    &:hover {
+      color: #ffc513;
+    }
+  }
+}

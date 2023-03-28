@@ -1,0 +1,45 @@
+@use 'src/styles/colors.module.scss' as *;
+.widgets {
+  background: #fff;
+  padding-top: 55px;
+  .items {
+    padding-top: 25px;
+    color: map-get($colors, black);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .item {
+      font-family: 'Poppins', sans-serif;
+      max-width: 246px;
+      text-align: center;
+      width: 100%;
+
+      .decoration {
+        border-radius: 100%;
+        position: relative;
+        height: 246px;
+        width: 246px;
+        background: map-get($colors, white500);
+
+        .text {
+          position: absolute;
+          left: 50%;
+          top: -10%;
+          transform: translate(-50%, 10%);
+          color: map-get($colors, white);
+          font-size: 140px;
+          line-height: 1;
+          font-weight: 600;
+        }
+      }
+
+      .name {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 20px;
+      }
+    }
+  }
+}

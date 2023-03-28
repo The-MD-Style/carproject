@@ -1,0 +1,87 @@
+@use 'src/styles/colors.module.scss' as *;
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  height: 525px;
+  width: 370px;
+  color: #292929;
+  background-color: #fff;
+
+  .bgPhoto {
+    position: absolute;
+    top: 23%;
+  }
+
+  .title {
+    font-size: 22px;
+    line-height: 29px;
+    font-weight: 600;
+  }
+  .price {
+    font-size: 40px;
+    font-weight: 600;
+    .sup {
+      position: relative;
+      left: -10px;
+      font-size: 20px;
+    }
+  }
+  .description {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    width: 80%;
+  }
+
+  .btn {
+    border: 1px solid map-get($colors, darkGrey);
+    border-color: #3a3a3a;
+    padding: 15px 44px;
+    color: #292929;
+    &:hover {
+      background-color: #292929;
+      color: white;
+    }
+  }
+}
+.cardDark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  height: 525px;
+  width: 370px;
+  background-color: #616161;
+  color: white;
+
+  .bgPhoto {
+    position: absolute;
+    top: 23%;
+  }
+  .priceDark {
+    color: #ffc513;
+    font-size: 40px;
+    font-weight: 600;
+    .sup {
+      position: relative;
+      left: -10px;
+      font-size: 20px;
+    }
+  }
+  .btnDark {
+    border: 1px solid map-get($colors, darkGrey);
+    border-color: #3a3a3a;
+    padding: 15px 44px;
+    color: white;
+    &:hover {
+      background-color: #fff;
+      color: #3a3a3a;
+    }
+  }
+}

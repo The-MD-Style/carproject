@@ -1,0 +1,89 @@
+@use 'src/styles/colors.module.scss' as *;
+.container {
+  z-index: 3;
+  background: #fff;
+  font-family: 'Poppins', 'sans-serif';
+  padding: 15px 0;
+  height: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1180px;
+    width: 100%;
+    .logo {
+      display: flex;
+      justify-items: baseline;
+      cursor: pointer;
+    }
+    .links {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+
+      .item {
+        margin-top: 10px;
+        padding-bottom: 6px;
+        border-bottom: 3px solid transparent;
+        transition: linear 0.2s;
+
+        &:hover {
+          border-bottom: 3px solid map-get($colors, orange);
+        }
+
+        .text {
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 15px;
+          line-height: 23px;
+          font-weight: 600;
+          color: map-get($colors, darkGrey);
+        }
+      }
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .search {
+        padding: 0;
+        height: 36px;
+        width: 36px;
+        border-radius: 0;
+        background: transparent;
+
+        &:hover {
+          background: map-get($colors, vividAmber);
+        }
+      }
+
+      .cart {
+        padding: 0;
+        background: transparent;
+      }
+    }
+  }
+}
+
+.scrolled {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  animation: show 0.5s;
+  box-shadow: 0 6px 35px rgba(0, 0, 0, 0.07);
+}
+
+@keyframes show {
+  from {
+    top: -99px;
+  }
+  to {
+    top: 0;
+  }
+}

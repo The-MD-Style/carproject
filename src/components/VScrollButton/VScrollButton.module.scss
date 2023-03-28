@@ -1,0 +1,33 @@
+.container {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  width: 64px;
+  height: 64px;
+  transition: 0.2s;
+  background: orange;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  animation: show 0.5s;
+
+  .icon {
+    fill: black;
+  }
+
+  &:hover {
+    cursor: pointer;
+    bottom: 35px;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

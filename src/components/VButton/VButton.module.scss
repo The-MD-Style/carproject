@@ -1,0 +1,11 @@
+@use 'src/styles/colors.module.scss' as *;
+.wrapper {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: map-get($colors, white);
+    background: map-get($colors, pink);
+    cursor: pointer;
+}

@@ -1,0 +1,40 @@
+.container {
+  background-color: white;
+  padding-bottom:140px ;
+  width: 100%;
+ .paths{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 203px;
+  width: 100%;
+  background-image: url('../../assets/images/backgrounds/header-photo.jpg');
+  background-position: right;
+  color: white;
+
+  .title {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 44px;
+    text-transform: capitalize;
+  }
+
+  .path {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .separator {
+      color: yellow;
+      margin: 0 15px;
+    }
+  }
+}
+}
+

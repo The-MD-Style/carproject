@@ -1,0 +1,20 @@
+@use 'src/styles/colors.module.scss' as *;
+.link {
+  color: map-get($colors, white);
+  border: 2px solid map-get($colors, yellow);
+  line-height: 22px;
+  font-size: 14.5px;
+  font-weight: 700;
+  display: inline-block;
+  padding: 18px 27px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.4s;
+
+  &:hover {
+    background: map-get($colors, white);
+    color: map-get($colors, black);
+    border: 2px solid map-get($colors, white);
+  }
+}

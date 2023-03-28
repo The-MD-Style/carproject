@@ -1,0 +1,39 @@
+@use 'src/styles/colors.module.scss' as *;
+.active {
+  box-shadow: 0 6px 35px rgba(0, 0, 0, 0.07);
+  border-left: 5px solid map-get($colors, orange);
+}
+.wrapper {
+  width: 555px;
+  .container {
+    height: 69px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    background-color: #f5f5f5;
+    color: #3a3a3a;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+
+    .btn {
+      right: 0;
+      top: 50%;
+      color: #3a3a3a;
+      font-size: 22px;
+      font-weight: 500;
+    }
+  }
+  .answer {
+    padding: 20px 0 10px 0;
+    height: 69px;
+    width: 555px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #3a3a3a;
+    display: flex;
+    align-items: center;
+  }
+}

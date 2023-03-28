@@ -1,0 +1,67 @@
+@use 'src/styles/colors.module.scss' as *;
+.container {
+  color: map-get($colors, white);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  gap: 10px 10px;
+  grid-template-areas: '. a';
+  overflow: hidden;
+  height: 876px;
+  background-image: url('../../../assets/images/backgrounds/cartPhoto1.jpg');
+  background-size: cover;
+  background-position: bottom center;
+
+  .right {
+    left: -10px;
+    position: relative;
+    padding-left: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    grid-area: a;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: map-get($colors, darkGrey);
+
+    .headText {
+      font-family: sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #d4d4d4;
+    }
+    .list {
+      height: 100%;
+      justify-content: space-between;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+
+      .listItem {
+        color: map-get($colors, white);
+        font-size: 15px;
+        font-weight: 600;
+      }
+    }
+
+    .icon {
+      fill: map-get($colors, orange);
+      margin-right: 10px;
+    }
+
+    .bottomText {
+      position: absolute;
+      color: map-get($colors, white);
+      font-family: 'Poppins', sans-serif;
+      opacity: 0.02;
+      font-size: 160px;
+      left: 0;
+      bottom: 0px;
+      line-height: 100px;
+      font-weight: 600;
+    }
+  }
+}

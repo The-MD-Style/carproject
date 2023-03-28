@@ -1,0 +1,156 @@
+@use 'src/styles/colors.module.scss' as *;
+.features {
+  background: #fff;
+  padding-top: 55px;
+  .inner {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .btnList {
+      width: 100%;
+      display: flex;
+      gap: 2px;
+
+      .link {
+        fill: map-get($colors, black);
+        transition: 0.1s;
+        color: map-get($colors, black);
+        font-family: 'Poppins', sans-serif;
+        background: map-get($colors, white100);
+        width: 100%;
+        height: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 16px;
+        cursor: pointer;
+        border: 0.5px solid map-get($colors, white400);
+        border-bottom: 5px solid transparent;
+
+        &:hover {
+          border-bottom: 5px solid map-get($colors, yellow);
+        }
+
+        .icon {
+          fill: map-get($colors, grey500);
+        }
+
+        .name {
+          font-weight: 600;
+          font-size: 14px;
+        }
+      }
+      .activeFeature {
+        background: white;
+        border-bottom: 5px solid map-get($colors, yellow);
+      }
+    }
+
+    .showcase {
+      width: 100%;
+      padding: 66px 0;
+      position: relative;
+      background: map-get($colors, grey400);
+      display: flex;
+      justify-content: center;
+
+      .description {
+        position: absolute;
+        left: 30px;
+        top: 22px;
+        width: 366px;
+        padding: 17px 17px 17px 17px;
+        z-index: 1;
+        background-color: rgba(69, 69, 69, 0.7);
+        display: flex;
+        justify-content: space-between;
+
+        .descriptionIcon {
+          fill: white;
+          margin-top: 5px;
+          height: 20px;
+          margin-right: 10px;
+        }
+        .text {
+          color: #d4d4d4;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 25px;
+        }
+      }
+
+      .paragraph {
+        position: absolute;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        line-height: 50px;
+        font-size: 180px;
+        color: map-get($colors, grey300);
+      }
+
+      .iconList {
+        .link {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 55px;
+          height: 55px;
+          border-radius: 100%;
+          position: absolute;
+          background: map-get($colors, white);
+
+          &:active {
+            background: map-get($colors, yellow);
+            fill: map-get($colors, white);
+          }
+
+          &:nth-of-type(1) {
+            top: 47.3%;
+            left: 35.3%;
+          }
+
+          &:nth-of-type(2) {
+            top: 44%;
+            left: 21%;
+          }
+
+          &:nth-of-type(3) {
+            top: 34%;
+            left: 24.7%;
+          }
+
+          &:nth-of-type(4) {
+            top: 55.3%;
+            left: 72%;
+          }
+
+          &:nth-of-type(5) {
+            top: 62%;
+            left: 41.5%;
+          }
+
+          &:nth-of-type(6) {
+            top: 34%;
+            left: 32%;
+          }
+        }
+        .activeIcon {
+          background: map-get($colors, yellow);
+          fill: white;
+        }
+      }
+
+      .btn {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        padding: 17px 43px;
+        border: 1px solid map-get($colors, white) !important;
+      }
+    }
+  }
+}

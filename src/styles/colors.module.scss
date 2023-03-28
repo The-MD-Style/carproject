@@ -1,8 +1,87 @@
 $colors: (
-    homeBackground: linear-gradient(180deg, #6600b1 0, #b149fe),
-
+  linkBg: linear-gradient(to bottom, #ffffff 0%, #e7e7e7 100%),
+  white: #fff,
+  white100:rgba(245,245,245,255),
+  white400: #e7e7e7,
+  white500: #f5f5f5,
+  white600: #d4d4d4,
+  black: #000,
+  black09: rgba(64, 64, 64, 0.9),
+  grey: #a9a9a9,
+  grey100: #c8c8c8,
+  grey300: #6c6c6c,
+  grey400: #616161,
+  grey500: #4d4d4d,
+  grey800: #2d2d2d,
+  magenta: #a46497,
+  green: #7ad03a,
+  red: #a00,
+  orange: #ffba00,
+  yellow: #ffc513,
+  blue: #2ea2cc,
+  purple: #9b51e0,
+  darkGrey: #3a3a3a,
+  primary: #a46497,
+  secondary: #ebe9eb,
+  mudGrey: #515151,
+  mudGreen: #77a464,
+  lightGrey: #e7e7e7,
+  lightBrown: #767676,
+  bluishGray: #abb8c3,
+  palePink: #f78da7,
+  paleCyan: #8ed1fc,
+  vividRed: #cf2e2e,
+  vividGreen: #00d084,
+  vividOrange: #ff6900,
+  vividAmber: #fcb900,
+  vividCyan: #7bdcb5,
+  cyanBlue: #0693e3,
+  facebook: #3b5998,
+  twitter: #55acee,
+  insta: #4e433c,
+  google: #dd4b39,
 );
 
 :export {
-    homeBackground: linear-gradient(180deg, #6600b1 0, #b149fe);
+  white: map-get($colors, white);
+  white100: map-get($colors, white100);
+  white400: map-get($colors, white400);
+  white500: map-get($colors, white500);
+  white600: map-get($colors, white600);
+  linkBg: map-get($colors, linkBg);
+  black: map-get($colors, black);
+  black09: map-get($colors, black09);
+  grey: map-get($colors, grey);
+  grey100: map-get($colors, grey100);
+  grey300: map-get($colors, grey300);
+  grey400: map-get($colors, grey400);
+  grey500: map-get($colors, grey500);
+  grey800: map-get($colors, grey800);
+  magenta: map-get($colors, magenta);
+  green: map-get($colors, green);
+  red: map-get($colors, red);
+  orange: map-get($colors, orange);
+  yellow: map-get($colors, yellow);
+  blue: map-get($colors, blue);
+  purple: map-get($colors, purple);
+  darkGrey: map-get($colors, darkGrey);
+  primary: map-get($colors, primary);
+  secondary: map-get($colors, secondary);
+  mudGrey: map-get($colors, mudGrey);
+  mudGreen: map-get($colors, mudGreen);
+  lightGrey: map-get($colors, lightGrey);
+  lightBrown: map-get($colors, lightBrown);
+  bluishGray: map-get($colors, bluishGray);
+  palePink: map-get($colors, palePink);
+  paleCyan: map-get($colors, paleCyan);
+  vividRed: map-get($colors, vividRed);
+  vividGreen: map-get($colors, vividGreen);
+  vividOrange: map-get($colors, vividOrange);
+  vividAmber: map-get($colors, vividAmber);
+  vividCyan: map-get($colors, vividCyan);
+  cyanBlue: map-get($colors, cyanBlue);
+  facebook: map-get($colors, facebook);
+  twitter: map-get($colors, twitter);
+  insta: map-get($colors, insta);
+  google: map-get($colors, google);
 }
